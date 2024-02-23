@@ -5,7 +5,7 @@
 "
 
 / *VYTVORENI DATABASE* /\
-`CREATE DATABASE FIRMA;`\
+`CREATE DATABASE FIRMA;`
 
 / *POUZITI DATABASE* /\
 `USE FIRMA;`
@@ -25,18 +25,18 @@
 `    ZAKAZNIK_ID FOREIGN KEY REFERENCES ZAKAZNIK(ID))`
 
 / *VLOZENI NAHODNE GENEROVANYCH DATO DO TABULKY ZAKAZNIK (NEMUSI BYT MUZE SE UDELAT PRES VISUAL STUDIO* /\
-`INSERT INTO ZAKAZNIK (ID, JMENO, EMAIL) VALUES`
-`(1, 'John Doe', 'john@example.com'),`
-`(2, 'Alice Smith', 'alice@example.com'),`
+`INSERT INTO ZAKAZNIK (ID, JMENO, EMAIL) VALUES`\
+`(1, 'John Doe', 'john@example.com'),`\
+`(2, 'Alice Smith', 'alice@example.com'),`\
 `(3, 'Bob Johnson', 'bob@example.com');`
 
 / *VLOZENI NAHODNE GENEROVANYCH DATO DO TABULKY OBJEDNAVKA (NEMUSI BYT MUZE SE UDELAT PRES VISUAL STUDIO)* /\
-`INSERT INTO OBJEDNAVKA (ID, CasDodani, NazevProduktu, VipZakaznik, Zakaznik_ID) VALUES`
-`(1, '2024-02-21 10:00:00', 'Product A', 0, 1),`
-`(2, '2024-02-21 11:30:00', 'Product B', 1, 2),`
-`(3, '2024-02-22 09:45:00', 'Product C', 0, 1),`
-`(4, '2024-02-23 14:20:00', 'Product D', 1, 3),`
-`(5, '2024-02-24 08:00:00', 'Product E', 0, 2),`
+`INSERT INTO OBJEDNAVKA (ID, CasDodani, NazevProduktu, VipZakaznik, Zakaznik_ID) VALUES`\
+`(1, '2024-02-21 10:00:00', 'Product A', 0, 1),`\
+`(2, '2024-02-21 11:30:00', 'Product B', 1, 2),`\
+`(3, '2024-02-22 09:45:00', 'Product C', 0, 1),`\
+`(4, '2024-02-23 14:20:00', 'Product D', 1, 3),`\
+`(5, '2024-02-24 08:00:00', 'Product E', 0, 2),`\
 `(6, '2024-02-24 12:45:00', 'Product F', 1, 3);`
 
 "
